@@ -1,0 +1,38 @@
+.transactionhistory{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 800px;
+border: 1px solid black;
+
+}
+
+.wrappertr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+
+
+
+.transactionheader{
+    background-color: aqua;
+    padding: 15px 0;
+    border: 1px solid black;
+}
+
+.transactionbody{
+display: flex;
+flex-direction: column;
+gap: 15px;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.wrappertd{
+display: flex;
+justify-content: center;
+}

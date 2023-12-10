@@ -1,27 +1,28 @@
 // import React from 'react'
+import css from './Transactions.module.css'
 
 const TransactionHistory = ({items}) => {
 
     const transactionNewArray = items.map(el => (
-        <tr  key={el.id}>
-        <td>{el.type}</td>
-        <td>{el.amount}</td>
-        <td>{el.currency}</td>
+        <tr className={css.wrappertr}  key={el.id}>
+        <td width="200" className={css.wrappertd}>{el.type}</td>
+        <td className={css.wrappertd}>{el.amount}</td>
+        <td width="180" className={css.wrappertd}>{el.currency}</td>
       </tr>
     ));
 
     
   return (
-    <table className="transaction-history">
-  <thead className="transaction-header">
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+    <table className={css.transactionhistory}>
+  <thead className={css.transactionheader}>
+    <tr className={css.wrappertr}>
+      <th width="200">Type</th>
+      <th >Amount</th>
+      <th width="200">Currency</th>
     </tr>
   </thead>
 
-  <tbody className="transaction-body">
+  <tbody className={css.transactionbody}>
 {transactionNewArray}
   </tbody>
 </table>

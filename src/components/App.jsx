@@ -32,7 +32,7 @@ export const App = () => {
     >
 
       <p> React homework template</p>
-      
+
          <Profile 
          username={user.username}
          tag={user.tag}
@@ -47,7 +47,7 @@ export const App = () => {
 
       <FriendList friends={friends} />
 
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </div>
 
 
