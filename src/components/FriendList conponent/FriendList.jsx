@@ -18,5 +18,6 @@ const FriendList = ({friends}) => {
   )
 }
 
+
 export  {FriendList}  
 
