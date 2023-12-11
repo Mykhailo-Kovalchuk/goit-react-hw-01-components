@@ -17,7 +17,5 @@ const FriendList = ({friends}) => {
 </ul>
   )
 }
-
-
 export  {FriendList}  
 
